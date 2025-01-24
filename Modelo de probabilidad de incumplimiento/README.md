@@ -23,26 +23,5 @@ Este repositorio contiene los archivos y scripts necesarios para entrenar, evalu
         * `modelo_probabilidad.pkl`: Modelo de probabilidad serializado en formato Pickle.
 
 ### Uso del Modelo
-1. **Preparación de los datos:** Asegurarse de que los datos de entrada tengan el mismo formato y las mismas variables que los datos utilizados para entrenar el modelo.
-2. **Carga del modelo:** Cargar el modelo serializado en el formato deseado (Keras o Pickle).
-3. **Predicción:** Utilizar el modelo cargado para realizar predicciones sobre nuevos datos. El modelo devolverá una probabilidad de incumplimiento para cada individuo.
-4. **Interpretación:** Utilizar la scorecard para interpretar los resultados del modelo.
 
-### Consideraciones
-* **Escalabilidad:** El modelo puede ser escalado para manejar grandes volúmenes de datos utilizando técnicas de aprendizaje distribuido.
-* **Interpretabilidad:** La scorecard facilita la interpretación de los resultados del modelo, lo que permite a los usuarios comprender los factores que influyen en la probabilidad de incumplimiento.
-* **Actualización:** El modelo debe ser actualizado periódicamente para mantener su precisión.
-
-### Próximos Pasos
-* **Deployment:** Implementar el modelo en una aplicación web o API para facilitar su uso por parte de otros equipos.
-* **Monitoreo:** Implementar un sistema de monitoreo para evaluar el desempeño del modelo en producción y detectar posibles problemas.
-
-**Este README.md proporciona una descripción clara y concisa del repositorio, lo que facilitará a otros usuarios entender el proyecto y utilizarlo.**
-
-**Consideraciones adicionales:**
-
-* **Especificidad:** Si tienes más detalles sobre el proceso de entrenamiento, las métricas de evaluación o las características específicas del modelo, puedes incluirlos en el README.
-* **Visualizaciones:** Si tienes visualizaciones que ayuden a entender el modelo o los datos, puedes incluir enlaces a ellas.
-* **Licencia:** Indica la licencia bajo la cual se distribuye el código.
-* **Contribuciones:** Si deseas que otros contribuyan al proyecto, puedes incluir una sección con instrucciones para hacerlo.
-
+Para utilizar el modelo, es necesario cargar el modelo serializado y preparar los datos de entrada con el mismo formato que los datos de entrenamiento. El modelo generará una probabilidad de incumplimiento para cada nuevo individuo. La scorecard asociada al modelo permite interpretar estas probabilidades en términos de riesgo crediticio.
